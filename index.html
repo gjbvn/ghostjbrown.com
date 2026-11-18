@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Josh Brown — Photography</title>
+<meta name="description" content="Photography by Josh Brown (GhostJBrown).">
+<meta property="og:title" content="Josh Brown — Photography">
+<meta property="og:description" content="Photography by Josh Brown (GhostJBrown).">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.ghostjbrown.com/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header class="masthead">
+    <h1><a href="#all">Josh Brown</a></h1>
+    <p class="tagline">GhostJBrown</p>
+  </header>
+
+  <nav class="sections" aria-label="Sections">
+    <a href="#all" data-section="all">All</a>
+    <a href="#city" data-section="city">City</a>
+    <a href="#people" data-section="people">People</a>
+    <a href="#rural" data-section="rural">Rural</a>
+    <a href="#abstract" data-section="abstract">Abstract</a>
+    <a href="#film" data-section="film">Film</a>
+    <a href="#about" data-section="about">About</a>
+  </nav>
+
+  <main>
+    <div id="gallery" class="gallery" aria-live="polite"></div>
+    <section id="about-panel" class="about" hidden>
+      <p>Josh Brown is a photographer working under the name GhostJBrown.</p>
+      <p>For prints, collaborations or just to say hello, email <a href="mailto:ghostjbrown@gmail.com">ghostjbrown@gmail.com</a>.</p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="footer-email" href="mailto:ghostjbrown@gmail.com">ghostjbrown@gmail.com</a>
+    <span>© <span id="year">2026</span> Josh Brown</span>
+  </footer>
+</div>
+
+<div id="lightbox" class="lightbox" hidden role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="lb-btn lb-close" type="button" aria-label="Close">
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg>
+  </button>
+  <button class="lb-btn lb-prev" type="button" aria-label="Previous photo">
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M15 18l-6-6 6-6"/></svg>
+  </button>
+  <figure class="lb-figure">
+    <img id="lb-img" alt="">
+    <figcaption id="lb-count"></figcaption>
+  </figure>
+  <button class="lb-btn lb-next" type="button" aria-label="Next photo">
+    <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 18l6-6-6-6"/></svg>
+  </button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
